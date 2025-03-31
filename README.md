@@ -16,12 +16,12 @@ Carrera: 187-3 INGENIERÍA INFORMÁTICA
 
 - `Tareas/`: Contiene los archivos tareas que se plantea en cada modulo.
 - `Proyectos/`: Contiene los 2 Proyectos que hacen por modulo.
-- `Retos3/`: Contiene los archivos relacionados ls Retos planteados en cada modulo.
+- `Retos/`: Contiene los archivos relacionados ls Retos planteados en cada modulo.
 
 ## Requisitos
 
 - Python 3.x
-- [Otras dependencias, si las hay]
+- [Otras dependencias: A definir]
 
-## Implementado en Debian con nvim (NvChad)
+## Implementado con Debian 12 (bookworm), nvim (NvChad), VSCode (Visual Studio Code)
 

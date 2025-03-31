@@ -1,4 +1,4 @@
-Retos :Ejercicios propuestos Sobre estandares y buenas practicas
+## Retos: Ejercicios propuestos Sobre estandares y buenas practicas
 
 Trabajo: 
 
@@ -207,9 +207,3 @@ Si quieres profundizar en PEP 8, aquí tienes algunos recursos útiles:
    - **`autopep8`:** Una herramienta que formatea automáticamente el código para cumplir con PEP 8.
 
 ---
-
-### **5. ¿Necesitas Más Ayuda?**
-
-Si tienes alguna duda sobre cómo aplicar PEP 8, cómo estructurar tu código, o cualquier otra cosa relacionada con la tarea, ¡no dudes en preguntar! Estoy aquí para ayudarte. 😊
-
-¡Buena suerte con la tarea! 🚀

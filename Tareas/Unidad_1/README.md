@@ -1,6 +1,6 @@
 # Proyecto INF220-I2 - Unidad 1
 
-Este repositorio contiene las tareas correspondientes a la Unidad 1 del curso INF220-I2.
+Este repositorio contiene las tareas correspondientes a la Unidad 1 del curso INF220-I2. (Estructura de Datos I)
 
 Tarea : Representacion del ADT Arboles binarios de busquedas
 
@@ -19,7 +19,7 @@ Nota: Respetando el estandar de codificación PEP8 y los principios de la progra
 ## Estructura del Proyecto
 
 - **arbol_binario.py**: Archivos Python relacionados con las tareas.
-- **readme.doc**: Explicaciones y detalles de las soluciones implementadas
+- **readme.doc**: Explicaciones y detalles de las soluciones implementadas (Este archivo)
 
 ## Requisitos
 
