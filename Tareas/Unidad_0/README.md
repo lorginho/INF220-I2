@@ -29,9 +29,9 @@ Se envio el enlace al Docente completando la tarea
 *   Se creo la Estructura para : Proyectos, Tareas, Retos
 *   En cada carpeta hay archivo ( readme.md) que describe 
     el proposito/objetivo de esa carpeta, ya sea: Tarea, Proyecto o Reto.
+ 
 
-
-[08:37:24] INF220-I2 (main)*$ tree
+[08:54:51] INF220-I2 (main)*$ tree
 .
 ├── Proyectos
 ├── README.md
@@ -47,10 +47,10 @@ Se envio el enlace al Docente completando la tarea
 └── Tareas
     ├── Unidad_0
     │   ├── CodificacionColaborativa.txt
-    │   ├── readme.md
+    │   ├── README.md
     │   └── RepositorioGitHub.txt
     └── Unidad_1
         ├── arbol_binario.py
-        └── readme.md
+        └── README.md
 
-8 directories, 12 files        
+8 directories, 12 files
