@@ -1,3 +1,9 @@
+"""
+Módulo que utiliza el metodo gret, al cual se pasa como arguemento
+un nombre, luego se saluda por consola utilizando el argumento
+"""
+
+
 def greet(name):
     """
     Greets the user with a personalized message.
