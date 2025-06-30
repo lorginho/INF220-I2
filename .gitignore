@@ -3,6 +3,8 @@
 doc/
 *.zip
 otros/
+proyectos/fraction_calculator_tkinder/
+proyectos/fraction_calculator_web/
 
 # Ignorar carpeta de configuraciones de VSCode
 .vscode/
