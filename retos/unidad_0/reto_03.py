@@ -5,7 +5,12 @@ Este módulo utiliza la librería `time` y una clase `Timer` que actúa como un
 context manager para medir el tiempo transcurrido.
 """
 
+import os
+import sys
 import time
+
+if sys.stdout.isatty():  # Solo si es una terminal real
+    os.system("clear")
 
 
 class Timer:
@@ -30,7 +35,7 @@ class Timer:
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         """
-        Detiene el temporizador y muestra el tiempo transcurrido 
+        Detiene el temporizador y muestra el tiempo transcurrido
         al salir del bloque `with`.
 
         Args:

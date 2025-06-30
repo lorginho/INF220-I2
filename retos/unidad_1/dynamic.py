@@ -1,3 +1,13 @@
+# Dynamic
+#
+# Representation Scenario: Simulating a bank account.
+#
+# Task: Create a program that uses a dynamic data structure (like a list) to represent a bank account's transaction history. The program should allow users to:
+#
+# Deposit money: Add a transaction record with the amount and type "deposit". Withdraw money: Add a transaction record with the amount and type "withdrawal". View transaction history: Display all transactions in chronological order. Check balance: Calculate the current balance based on all transactions. Example:
+
+
+""" """
 transactions = []
 
 def deposit(amount):

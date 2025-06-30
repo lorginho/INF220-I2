@@ -1,7 +1,13 @@
 """
-Módulo que utiliza el metodo gret, al cual se pasa como arguemento
+Módulo que utiliza el metodo greet, al cual se pasa como arguemento
 un nombre, luego se saluda por consola utilizando el argumento
 """
+
+import os
+import sys
+
+if sys.stdout.isatty():  # Solo si es una terminal real
+    os.system("clear")
 
 
 def greet(name):
@@ -16,12 +22,10 @@ def greet(name):
     """
     if name.strip():  # Elimina espacios en blanco
         return f"Hello, {name}!"
-    else:
-        return "Hello, world!"
 
 
 if __name__ == "__main__":
     # Elimina espacios en blanco al principio y al final
     user_name = input("Enter your name: ").strip()
-    greeting = greet(user_name)
-    print(greeting)
+    GREETING = greet(user_name)
+    print(GREETING)

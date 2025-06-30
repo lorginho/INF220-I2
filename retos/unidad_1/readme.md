@@ -1,11 +1,6 @@
 # Reto Unidad 1
 Implementacion de practicas sobre los distintos modelos de representacion de datos
 
-# Requisitos de finalización
-Apertura: miércoles, 26 de marzo de 2025, 15:30
-Cierre: lunes, 31 de marzo de 2025, 15:30
-
-
 # Planteamiento del ejercicio a constuir
 
 Trabajar sobre la plataforma github cada estudiante se debe crear una cuenta, luego organizar una carpeta donde tenga la siguiente estructura:
@@ -16,7 +11,7 @@ En estas carpetas se subiran las tareas que se plantea en cada modulo y en la de
 
 Nota: Realizar la siguiente practica:
 
-- Realizar las practicas definidas en la plataforma google colab = Practicas 
+- Realizar las practicas definidas en la plataforma google colab = Practicas
 https://colab.research.google.com/drive/1K-pz-j6sycW6iBSgXTQzBGOncJb9oi08?usp=sharing
 
 - Subir los ejercicios resueltos en su plataforma de github y pasar el link para las revisiones.
@@ -68,7 +63,7 @@ print(search_results)
 
 display_catalog()
 
-Output : 
+Output :
 
 ## 2: Dynamic
 
@@ -81,7 +76,7 @@ Task: Create a program that uses a dynamic data structure (like a list) to repre
 
 Deposit money: Add a transaction record with the amount and type "deposit". Withdraw money: Add a transaction record with the amount and type "withdrawal". View transaction history: Display all transactions in chronological order. Check balance: Calculate the current balance based on all transactions. Example:
 
-### Codigo : 
+### Codigo :
 
 transactions = []
 
@@ -183,7 +178,7 @@ Task: Create a program that simulates a traffic intersection with traffic lights
 Create cars: With random arrival times and directions. Control traffic lights: Change lights at regular intervals. Move cars: Based on traffic light signals and car positions. Display the intersection: Visually represent the cars and traffic lights (e.g., using text-based output). Example (simplified):
 
 
-### codigo : 
+### codigo :
 
 import random
 import time
@@ -204,6 +199,3 @@ class TrafficLight:
       self.color = "red"
 
 # ... (rest of the simulation logic) ...
-
-
-

@@ -1,0 +1,42 @@
+[tool.black]
+line-length = 70
+target-version = ['py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | env
+  | build
+  | dist
+  | migrations
+  | __pycache__
+  | .*_pb2\.py
+)/
+'''
+skip-string-normalization = true
+skip-magic-trailing-comma = false
+preview = true
+
+[tool.isort]
+profile = "black"
+line_length = 79
+combine_as_imports = true
+include_trailing_comma = true
+multi_line_output = 3
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+
+[tool.flake8]
+max-line-length = 70
+#exclude = .git,__pycache__,old,build,dist,venv
+#extend-ignore = E203, W503
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+

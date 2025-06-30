@@ -1,26 +1,30 @@
 """
-Módulo para realizar operaciones matemáticas básicas.
-
-Este módulo contiene una función que suma dos números y devuelve el resultado.
+Definicion de el metodo add_numbers(a,b):
+En el que se muestra el empleo de PEP8.
+En este se muestra como documentar un metodo y como nombrar tambien.
+Empleando una llamada para probar que el codigo esta funcionando
 """
 
+import os
+import sys
+
+if sys.stdout.isatty():  # Solo si es una terminal real
+    os.system("clear")
+
+
 def add_numbers(a, b):
-    """
-    Suma dos números y devuelve el resultado.
-
+    """Add two numbers together.
+    result devuelve el valor concatenado
     Parameters:
-        a (int or float): El primer número a sumar.
-        b (int or float): El segundo número a sumar.
-
-    Returns:
-        int or float: El resultado de la suma de `a` y `b`.
+      a (int or float)
     """
 
     result = a + b
 
     return result
 
+
 if __name__ == "__main__":
-    # Llamada a la función add_numbers()
-    resultado_suma = add_numbers(100, 223)
-    print(resultado_suma)
+    # Llamada al metodo add_numbers()
+    NUMBER = add_numbers(500, 151)
+    print(NUMBER)

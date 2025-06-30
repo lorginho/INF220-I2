@@ -14,14 +14,18 @@ Carrera: 187-3 INGENIERÍA INFORMÁTICA
 
 ## Estructura del Repositorio
 
-- `Tareas/`: Contiene los archivos tareas que se plantea en cada modulo.
-- `Proyectos/`: Contiene los 2 Proyectos que hacen por modulo.
-- `Retos/`: Contiene los archivos relacionados ls Retos planteados en cada modulo.
+- `Tareas/`: Contiene los archivos tareas que se plantea en cada Módulo.
+- `Proyectos/`: Contiene los 2 Proyectos que se hacen por Módulo.
+- `Retos/`: Contiene los archivos relativosa Retos planteados en cada Módulo.
 
-## Requisitos
+## Requisitos:
 
 - Python 3.x
 - [Otras dependencias: A definir]
 
-## Implementado con Debian 12 (bookworm), nvim (NvChad), VSCode (Visual Studio Code)
-
+## Implementado con:
+- Python 3.11.2
+- OS: Debian GNU/Linux 12 (bookworm) x86_64
+- Zed (Editor basado en Rust)
+- nVim (NvChad)
+- VSCode (Visual Studio Code)
