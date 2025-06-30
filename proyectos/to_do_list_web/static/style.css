@@ -1,0 +1,125 @@
+body {
+    background-color: #fef6e4;
+    font-family: 'Segoe UI', sans-serif;
+    color: #001858;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+header,
+footer {
+    background-color: #f3d2c1;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    background-color: #fef6e4;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #8bd3dd;
+    color: #001858;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: #a0e9f5;
+}
+
+.tareas {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tareas li {
+    background-color: #fcd5ce;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.tareas li.completada span {
+    text-decoration: line-through;
+    color: #888;
+    flex-grow: 1;
+}
+
+.tareas li form:first-child button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4em;
+    color: green;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.boton-eliminar {
+    background-color: transparent;
+    color: #dc3545;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+
+.boton-eliminar:hover {
+    color: #a30000;
+}
+
+.lista-listas {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.lista-listas li {
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: #f3d2c1;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95em;
+    color: #001858;
+}
+
+.lista-listas li form {
+    margin: 0;
+}

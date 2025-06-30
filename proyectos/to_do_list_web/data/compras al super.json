@@ -1,0 +1,10 @@
+[
+    {
+        "descripcion": "leche",
+        "completada": false
+    },
+    {
+        "descripcion": "pan",
+        "completada": false
+    }
+]

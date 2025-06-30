@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block contenido %}
+    <h2>Lista actual: {{ lista_actual }}</h2>
+
+    <form action="/lista/{{ lista_actual }}/agregar" method="post">
+        <input type="text" name="descripcion" placeholder="Nueva tarea..." required autocomplete="off">
+        <label>
+            <input type="checkbox" name="inicio" value="1"> Insertar al inicio
+        </label>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <ul class="tareas">
+        {% for tarea in tareas %}
+        <li class="{% if tarea.completada %}completada{% endif %}">
+            <form action="/lista/{{ lista_actual }}/completar" method="post" style="margin: 0; padding: 0;">
+                <button type="submit" style="background:none; border:none; cursor:pointer; font-size: 1.2em;">
+                    {% if tarea.completada %}
+                        ✅
+                    {% else %}
+                        ⬜
+                    {% endif %}
+                </button>
+                <input type="hidden" name="descripcion" value="{{ tarea.descripcion }}">
+            </form>
+            <span style="flex:1; margin: 0 10px;">{{ tarea.descripcion }}</span>
+            <form action="/lista/{{ lista_actual }}/eliminar" method="post" style="margin: 0; padding: 0;">
+                <button type="submit" class="boton-eliminar">🗑</button>
+                <input type="hidden" name="descripcion" value="{{ tarea.descripcion }}">
+            </form>
+        </li>
+        {% else %}
+        <li>No hay tareas aún.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

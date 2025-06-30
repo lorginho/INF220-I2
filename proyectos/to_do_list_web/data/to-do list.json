@@ -1,0 +1,14 @@
+[
+    {
+        "descripcion": "crear data",
+        "completada": true
+    },
+    {
+        "descripcion": "controllers",
+        "completada": false
+    },
+    {
+        "descripcion": "requisitos",
+        "completada": false
+    }
+]

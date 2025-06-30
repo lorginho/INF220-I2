@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mis Listas de Tareas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>📝 Mis Listas de Tareas</h1>
+
+            {% if listas_existentes %}
+            <!-- Seleccionar Lista -->
+                        
+            <form action="/seleccionar_lista" method="post">
+                <label for="nombre_lista">Seleccionar:</label>
+                <select name="nombre_lista" id="nombre_lista" onchange="this.form.submit()">
+                    <option value="" disabled {% if not lista_actual %}selected{% endif %}>-- Selecciona una lista --</option>
+                    {% for nombre in listas_existentes %}
+                    <option value="{{ nombre }}" {% if nombre == lista_actual %}selected{% endif %}>{{ nombre }}</option>
+                    {% endfor %}
+                </select>
+            </form>
+
+            <!-- Lista con botones eliminar -->
+            <ul class="lista-listas">
+                {% for nombre in listas_existentes %}
+                <li>
+                    {{ nombre }}
+                    <form action="/eliminar_lista/{{ nombre }}" method="post" style="display:inline;">
+                        <button type="submit" onclick="return confirm('¿Eliminar la lista {{ nombre }}?')" class="boton-eliminar">🗑</button>
+                    </form>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+
+            <form action="/crear_lista" method="post" style="margin-top:15px; margin-bottom:15px;">
+                <input type="text" name="nueva_lista" placeholder="Nueva lista..." required autocomplete="off">
+                <button type="submit">Crear</button>
+            </form>
+
+
+        </header>
+
+        <main>
+            {% block contenido %}{% endblock %}
+        </main>
+
+        <footer>
+            <p><h2>Listas Existentes: {{ listas_existentes|length }}</h2></p>
+            <p>INF220-I2, Proyecto: To-Do List </p>
+            <p>Lorgio Añez J. - © 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
