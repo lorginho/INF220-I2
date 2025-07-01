@@ -5,6 +5,8 @@ doc/
 otros/
 proyectos/fraction_calculator_tkinder/
 proyectos/fraction_calculator_web/
+retos/
+tareas/
 
 # Ignorar carpeta de configuraciones de VSCode
 .vscode/
